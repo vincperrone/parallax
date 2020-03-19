@@ -31,7 +31,7 @@ window.addEventListener('scroll', function(e){
 
 // Change style of navbar on scroll
 window.addEventListener('scroll', function() {
-    if(Number(height.replace(/[^0-9]/g,'')) == 0 && loggedIn) return;
+    if(Number(height.toString().replace(/[^0-9]/g,'')) == 0 && loggedIn) return;
     var normal = "navbar navbar-default", classes = " sticky";
 
     var navbar = document.querySelector("nav");
