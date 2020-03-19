@@ -35,8 +35,8 @@ window.addEventListener('scroll', function() {
     var normal = "navbar navbar-default", classes = " sticky";
 
     var navbar = document.querySelector("nav");
-    if(document.body.scrollTop > window.innerHeight * Number(height.replace(/[^0-9]/g,'')) / 100 - 100
-    || document.documentElement.scrollTop > window.innerHeight * Number(height.replace(/[^0-9]/g,'')) / 100 - 100) {
+    if(document.body.scrollTop > window.innerHeight * Number(height.toString().replace(/[^0-9]/g,'')) / 100 - 100
+    || document.documentElement.scrollTop > window.innerHeight * Number(height.toString().replace(/[^0-9]/g,'')) / 100 - 100) {
         navbar.className = normal + classes;
     } else {
         navbar.className = normal;
