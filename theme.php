@@ -85,7 +85,7 @@ if($Wcms->currentPage == $Wcms->get('config', 'login')) {
             </div>
             <?php if($readMore): ?>
 			<a href="#content" class="scrolly"><?=$readMore?><br>
-			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"><path d="M119.5 262.9L3.5 145.1c-4.7-4.7-4.7-12.3 0-17l7.1-7.1c4.7-4.7 12.3-4.7 17 0L128 223.3l100.4-102.2c4.7-4.7 12.3-4.7 17 0l7.1 7.1c4.7 4.7 4.7 12.3 0 17L136.5 263c-4.7 4.6-12.3 4.6-17-.1zm17 128l116-117.8c4.7-4.7 4.7-12.3 0-17l-7.1-7.1c-4.7-4.7-12.3-4.7-17 0L128 351.3 27.6 249.1c-4.7-4.7-12.3-4.7-17 0l-7.1 7.1c-4.7 4.7-4.7 12.3 0 17l116 117.8c4.7 4.6 12.3 4.6 17-.1z" fill="#ffffff"/></svg></a>
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"><path d="M119.5 262.9L3.5 145.1c-4.7-4.7-4.7-12.3 0-17l7.1-7.1c4.7-4.7 12.3-4.7 17 0L128 223.3l100.4-102.2c4.7-4.7 12.3-4.7 17 0l7.1 7.1c4.7 4.7 4.7 12.3 0 17L136.5 263c-4.7 4.6-12.3 4.6-17-.1zm17 128l116-117.8c4.7-4.7 4.7-12.3 0-17l-7.1-7.1c-4.7-4.7-12.3-4.7-17 0L128 351.3 27.6 249.1c-4.7-4.7-12.3-4.7-17 0l-7.1 7.1c-4.7 4.7-4.7 12.3 0 17l116 117.8c4.7 4.6 12.3 4.6 17-.1z" fill="#2d2d2d"/></svg></a>
             <?php endif; ?>
         </div>
     </header>
@@ -96,14 +96,14 @@ if($Wcms->currentPage == $Wcms->get('config', 'login')) {
 
 	<div class="container" id="content">
 		<div class="row">
-			<div class="col-lg-12 text-center padding40">
+			<div class="col-lg-12 text-center p-4">
 				<?=$Wcms->page('content')?>
 			</div>
 		</div>
 	</div>
 
-	<div class="container-fluid CTA">
-		<div class="text-center padding40">
+	<div class="container-fluid">
+		<div class="text-center p-5">
 			<?=$Wcms->block('subside')?>
 		</div>
 	</div>
@@ -114,12 +114,10 @@ if($Wcms->currentPage == $Wcms->get('config', 'login')) {
 
     <?php endif; ?>
 
-	<footer class="container-fluid">
-		<div class="text-center padding20">
-			<br><br>
+	<footer class="container-fluid footer">
+		<div class="text-center p-3">
 			<?php //$Wcms->footer()?>
 			<?=$Wcms->block('footer')?>
-			<br><br><br>
 		</div>
 	</footer>
 
