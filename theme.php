@@ -63,7 +63,7 @@ if($Wcms->currentPage == $Wcms->get('config', 'login')) {
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="<?=$Wcms->url()?>">
+				<a class="navbar-brand p-0" href="<?=$Wcms->url()?>">
 					<img style="max-height:50px" src="data/files/logo.png" title="<?=$Wcms->get('config','siteTitle')?>">
 				</a>
 			</div>

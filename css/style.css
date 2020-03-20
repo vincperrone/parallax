@@ -13,7 +13,9 @@
  *  Anyhow, don't be too picky here. Most of this has been put
  *  together without planning.
  */
-
+.p-0 {
+    padding: 0 !important;
+}
 
 /* Some resets */
 
