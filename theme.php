@@ -41,7 +41,7 @@ if($Wcms->currentPage == $Wcms->get('config', 'login')) {
 	<title><?=$Wcms->get('config','siteTitle')?> - <?=$Wcms->page('title')?></title>
 	<meta name="description" content="<?=$Wcms->page('description')?>">
 	<meta name="keywords" content="<?=$Wcms->page('keywords')?>">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="<?=$Wcms->asset('css/bootstrap.min.css')?>">
 	<link rel="stylesheet" href="<?=$Wcms->asset('css/style.css')?>">
 	<link href="https://fonts.googleapis.com/css?family=Lato:300,400&display=swap" rel="stylesheet">
 	<?=$Wcms->css()?>
@@ -103,9 +103,9 @@ if($Wcms->currentPage == $Wcms->get('config', 'login')) {
 	</div>
 
 	<div class="container-fluid CTA">
-			<div class="text-center padding40">
-				<?=$Wcms->block('subside')?>
-			</div>
+		<div class="text-center padding40">
+			<?=$Wcms->block('subside')?>
+		</div>
 	</div>
 
     <?php else: ?>
@@ -117,13 +117,14 @@ if($Wcms->currentPage == $Wcms->get('config', 'login')) {
 	<footer class="container-fluid">
 		<div class="text-center padding20">
 			<br><br>
-			<?=$Wcms->footer()?>
+			<?php //$Wcms->footer()?>
+			<?=$Wcms->block('footer')?>
 			<br><br><br>
 		</div>
 	</footer>
 
-	<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha256-U5ZEeKfGNOja007MMD3YBI0A3OSZOQbeG6z2f2Y0hu8=" crossorigin="anonymous"></script>
+	<script src="<?=$Wcms->asset('js/jquery-1.12.4.min.js')?>></script>
+	<script src="<?=$Wcms->asset('js/bootstrap.min.js')?>></script>
 	<?=$Wcms->js()?>
     <script src="<?=$Wcms->asset('js/script.js')?>"></script>
 
