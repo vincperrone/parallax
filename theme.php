@@ -123,8 +123,8 @@ if($Wcms->currentPage == $Wcms->get('config', 'login')) {
 		</div>
 	</footer>
 
-	<script src="<?=$Wcms->asset('js/jquery-1.12.4.min.js')?>></script>
-	<script src="<?=$Wcms->asset('js/bootstrap.min.js')?>></script>
+	<script src="<?=$Wcms->asset('js/jquery-1.12.4.min.js')?>"></script>
+	<script src="<?=$Wcms->asset('js/bootstrap.min.js')?>"></script>
 	<?=$Wcms->js()?>
     <script src="<?=$Wcms->asset('js/script.js')?>"></script>
 
